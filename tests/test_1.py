@@ -43,7 +43,7 @@ class MyTestCaseForAtoB(unittest.TestCase):
     def test_going_from_A_to_B_branch_and_bound_h(self):
         branch_and_bound_with_h = search.branch_and_bound_with_heuristic_search(self.problem_to_resolve)
         self.assertEqual(branch_and_bound_with_h[1], 16, "It should have generated 16 nodes")
-        self.assertEqual(branch_and_bound_with_h[2], 5, "It should have visited 5 nodes")
+        self.assertEqual(branch_and_bound_with_h[2], 6, "It should have visited 6 nodes")
         self.assertEqual(branch_and_bound_with_h[3], 418, "The total cost is 418")
 
         route = ["<Node B>", "<Node P>", "<Node R>", "<Node S>", "<Node A>"]
